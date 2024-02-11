@@ -51,6 +51,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":news:news_presentation"))
 
     implementation(Deps.core)
     implementation(Deps.lifecycle)
