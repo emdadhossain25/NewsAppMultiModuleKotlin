@@ -52,6 +52,13 @@ android {
 
 dependencies {
     implementation(project(":news:news_presentation"))
+    implementation(project(":news:news_domain"))
+    implementation(project(":news:news_data"))
+
+    implementation(project(":search:search_presentation"))
+    implementation(project(":search:search_data"))
+    implementation(project(":search:search_domain"))
+
 
     implementation(Deps.core)
     implementation(Deps.lifecycle)
