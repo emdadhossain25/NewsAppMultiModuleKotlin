@@ -44,4 +44,8 @@ dependencies {
     testImplementation(TestDeps.junit)
     androidTestImplementation(AndroidTestDeps.junit_ext)
     androidTestImplementation(AndroidTestDeps.espresso_core)
+
+    implementation(Retrofit.retrofit)
+    implementation(Retrofit.okhttp)
+    implementation(Retrofit.gson)
 }

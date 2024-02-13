@@ -9,6 +9,8 @@ object Versions {
     const val junit_ext = "1.1.5"
     const val material = "1.11.0"
     const val espresso_core="3.5.1"
+    const val retrofit_version="2.9.0"
+    const val okhttp_version="4.12.0"
 //    const val compose_bom = "1.8.2"
 //    const val android_test_bom = "2023.08.00"
 }
@@ -27,8 +29,13 @@ object Deps {
 
 }
 
+object Retrofit{
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit_version}"
+    const val gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit_version}"
+    const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp_version}"
+}
 object Compose {
-    const val compose = "androidx.activity:activity-compose:${Versions.compose}"
+//    const val compose = "androidx.activity:activity-compose:${Versions.compose}"
 //    const val compose_bom = "androidx.compose:compose-bom:${Versions.compose_bom}"
 //    const val compose_ui = "androidx.compose.ui:ui"
 //    const val compose_graphics = "androidx.compose.ui:ui-graphics"
