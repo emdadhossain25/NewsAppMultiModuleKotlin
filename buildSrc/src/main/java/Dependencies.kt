@@ -11,6 +11,7 @@ object Versions {
     const val espresso_core="3.5.1"
     const val retrofit_version="2.9.0"
     const val okhttp_version="4.12.0"
+    const val hilt_version="2.44"
 //    const val compose_bom = "1.8.2"
 //    const val android_test_bom = "2023.08.00"
 }
@@ -64,4 +65,9 @@ object AndroidTestDeps{
 object DebugDeps{
 //    const val ui_tooling = "androidx.compose.ui:ui-tooling"
 //    const val ui_test_manifest = "androidx.compose.ui:ui-test-manifest"
+}
+
+object Dagger{
+    const val hilt_compiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt_version}"
+    const val hilt_android = "com.google.dagger:hilt-android:${Versions.hilt_version}"
 }
