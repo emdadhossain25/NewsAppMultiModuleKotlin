@@ -12,6 +12,7 @@ object Versions {
     const val retrofit_version="2.9.0"
     const val okhttp_version="4.12.0"
     const val hilt_version="2.44"
+    const val constraint_layout_version="2.2.0-alpha13"
 //    const val compose_bom = "1.8.2"
 //    const val android_test_bom = "2023.08.00"
 }
@@ -70,4 +71,8 @@ object DebugDeps{
 object Dagger{
     const val hilt_compiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt_version}"
     const val hilt_android = "com.google.dagger:hilt-android:${Versions.hilt_version}"
+}
+
+object ConstraintLayout{
+    const val constraint_layout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout_version}"
 }

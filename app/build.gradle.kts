@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -48,6 +50,9 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    dataBinding {
+        enable = true
+    }
 }
 
 dependencies {
@@ -73,6 +78,12 @@ dependencies {
     testImplementation(TestDeps.junit)
     androidTestImplementation(AndroidTestDeps.junit_ext)
     androidTestImplementation(AndroidTestDeps.espresso_core)
+    implementation(Dagger.hilt_android)
+    kapt(Dagger.hilt_compiler)
+    implementation(ConstraintLayout.constraint_layout)
 
+}
 
+kapt {
+    correctErrorTypes = true
 }
