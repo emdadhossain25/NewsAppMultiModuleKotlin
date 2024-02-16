@@ -78,6 +78,7 @@ dependencies {
     implementation(Dagger.hilt_android)
     kapt(Dagger.hilt_compiler)
     implementation(ConstraintLayout.constraint_layout)
+    implementation(Lottie.lottie)
 
 }
 

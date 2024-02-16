@@ -8,11 +8,12 @@ object Versions {
     const val junit = "4.13.2"
     const val junit_ext = "1.1.5"
     const val material = "1.11.0"
-    const val espresso_core="3.5.1"
-    const val retrofit_version="2.9.0"
-    const val okhttp_version="4.12.0"
-    const val hilt_version="2.44"
-    const val constraint_layout_version="2.2.0-alpha13"
+    const val espresso_core = "3.5.1"
+    const val retrofit_version = "2.9.0"
+    const val okhttp_version = "4.12.0"
+    const val hilt_version = "2.44"
+    const val constraint_layout_version = "2.2.0-alpha13"
+    const val lottie_version = "3.4.0"
 //    const val compose_bom = "1.8.2"
 //    const val android_test_bom = "2023.08.00"
 }
@@ -31,11 +32,12 @@ object Deps {
 
 }
 
-object Retrofit{
+object Retrofit {
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit_version}"
     const val gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit_version}"
     const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp_version}"
 }
+
 object Compose {
 //    const val compose = "androidx.activity:activity-compose:${Versions.compose}"
 //    const val compose_bom = "androidx.compose:compose-bom:${Versions.compose_bom}"
@@ -56,23 +58,28 @@ object TestDeps {
 //    const val compose_junit = "androidx.compose.ui:ui-test-junit4"
 }
 
-object AndroidTestDeps{
+object AndroidTestDeps {
     const val junit_ext = "androidx.test.ext:junit:${Versions.junit_ext}"
     const val espresso_core = "androidx.test.espresso:espresso-core:${Versions.espresso_core}"
 //    const val compose_bom = "androidx.compose:compose-bom:${Versions.android_test_bom}"
 
 }
 
-object DebugDeps{
+object DebugDeps {
 //    const val ui_tooling = "androidx.compose.ui:ui-tooling"
 //    const val ui_test_manifest = "androidx.compose.ui:ui-test-manifest"
 }
 
-object Dagger{
+object Dagger {
     const val hilt_compiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt_version}"
     const val hilt_android = "com.google.dagger:hilt-android:${Versions.hilt_version}"
 }
 
-object ConstraintLayout{
-    const val constraint_layout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout_version}"
+object ConstraintLayout {
+    const val constraint_layout =
+        "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout_version}"
+}
+
+object Lottie {
+    const val lottie = "com.airbnb.android:lottie:${Versions.lottie_version}"
 }
